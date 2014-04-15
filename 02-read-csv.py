@@ -15,3 +15,14 @@ count = 0
 while (count < 9):
    print 'The count is:', count
    count = count + 1
+
+
+maybe csv open 'r' thing
+
+then
+
+i =0
+for row in reader:
+	while i < 50:
+		print row
+	i = i + 1
