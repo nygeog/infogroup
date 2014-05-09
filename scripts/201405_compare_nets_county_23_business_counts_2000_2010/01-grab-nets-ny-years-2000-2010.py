@@ -1,5 +1,6 @@
+print 'test'
 import pandas as pd
-import numpy as np
+#import numpy
 import datetime
 
 flddir = '/Volumes/Echo/GIS/data/infogroup/CSV/'
@@ -14,7 +15,7 @@ for year in years: #range(2012,2013):
 	fileOu = 'infogroup_bus_'+y+'_nynjpa_subset.csv'
 	inCSV = flddir + fileIn
 	ouCSV = flddir + fileOu
-	df = pd.read_csv(inCSV, dtype = {'ZIP': object})
+	df = pd.read_csv(inCSV)#, dtype = {'ZIP': object}, low_memory=False)
 	df = df[(df.STATE == 'NY') | (df.STATE == 'NJ') | (df.STATE == 'PA')]
 	df.to_csv(ouCSV, index=False)
 	shape = df.shape
@@ -26,7 +27,7 @@ for year in years: #range(2012,2013):
 	print 'add decimals to LATT and LONG fields'
 	inCSV = flddir + 'infogroup_bus_'+y+'_nynjpa_subset.csv'
 	ouCSV = flddir + 'infogroup_bus_'+y+'_nynjpa_subset_xy.csv'
-	df = pd.read_csv(inCSV, dtype = {'ZIP': object})
+	df = pd.read_csv(inCSV)#, dtype = {'ZIP': object})
 	df['lat'] = df['LATT'] * 0.000001
 	df['lng'] = df['LONG'] * -0.000001
 	df['uid'] = df.index + 1000001
@@ -34,6 +35,7 @@ for year in years: #range(2012,2013):
 	df.to_csv(ouCSV, index=False)
 	print 'finished at - ' + str(now)
 
+print 'complete'
 
 # print 'add decimals to LATT and LONG fields'
 # inCSV = '/Volumes/Echo/GIS/data/infogroup/CSV/infogroup_bus_2012_samp.csv'
