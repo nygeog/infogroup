@@ -28,6 +28,8 @@ ouCSV = '/Volumes/Echo/GIS/data/infogroup/CSV/infogroup_bus_2012_samp_xy.csv'
 df = pd.read_csv(inCSV, dtype = {'ZIP': object})
 df['lat'] = df['LATT'] * 0.000001
 df['lng'] = df['LONG'] * -0.000001
+df['uid'] = df.index + 1000001
+df = df[['uid','lat','lng']]
 df.to_csv(ouCSV, index=False)
 
 print 'add decimals to LATT and LONG fields'
@@ -36,4 +38,6 @@ ouCSV = '/Volumes/Echo/GIS/data/infogroup/CSV/infogroup_bus_2012_nynjpa_subset_x
 df = pd.read_csv(inCSV, dtype = {'ZIP': object})
 df['lat'] = df['LATT'] * 0.000001
 df['lng'] = df['LONG'] * -0.000001
+df['uid'] = df.index + 1000001
+df = df[['uid','lat','lng']]
 df.to_csv(ouCSV, index=False)
