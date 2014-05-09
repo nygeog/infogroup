@@ -24,8 +24,8 @@ for year in years: #range(2012,2013):
 	
 
 	print 'add decimals to LATT and LONG fields'
-	inCSV = '/Volumes/Echo/GIS/data/infogroup/CSV/infogroup_bus_'+year+'_nynjpa_subset.csv'
-	ouCSV = '/Volumes/Echo/GIS/data/infogroup/CSV/infogroup_bus_'+year+'_nynjpa_subset_xy.csv'
+	inCSV = flddir + 'infogroup_bus_'+y+'_nynjpa_subset.csv'
+	ouCSV = flddir + 'infogroup_bus_'+y+'_nynjpa_subset_xy.csv'
 	df = pd.read_csv(inCSV, dtype = {'ZIP': object})
 	df['lat'] = df['LATT'] * 0.000001
 	df['lng'] = df['LONG'] * -0.000001
