@@ -5,16 +5,18 @@ InfoGroup data from DSSC (EDS)
 
 ![alt text](images/Rplot.png "Title")
 
-Source data: County data counts for NETS 2000,2010 and Infogroup 2000,2010,2012 [csv](data/county_business_counts_nets_infogroup_final.csv)
+Source data: County data counts for NETS 2000, 2010 and Infogroup 2000, 2010, 2012 [csv](data/county_business_counts_nets_infogroup_final.csv)
 
 ####Notes
-Here’s a first comparison of the counts of businesses in our 23 counties for NETS and InfoGroup data (attached is a csv and chart for anyone interested). Out of PA,NJ,NY, only 32% of all records for InfoGroup have a pre-existing lat,long pair. So the earliest InfoGroup data would greatly benefit from geocoding. So its important to keep in mind that InfoGroup 2000 is missing 1/3. Also, these NETS calcs are for raw (not collapsed).
+Here’s a first comparison of the counts of businesses in our 23 counties for NETS and InfoGroup data (linked above is a csv and chart for anyone interested). 
+
+* Out of PA,NJ,NY, only 32% of all records for InfoGroup have a pre-existing lat,long pair. So the earliest InfoGroup data would greatly benefit from geocoding. So its important to keep in mind that InfoGroup 2000 is missing 1/3. Also, these NETS calcs are for raw (not collapsed).
 
 I included 2012 mostly b/c I had already done it as a test set, but what’s interesting is for InfoGroup Manhattan actually lost ~2,000 businesses (not sure if that’s a result of missing lat,longs in the 2012 slice or there were less actual businesses from 2010 to 2012). 
 
-There’s ~18,000 more businesses in Manhattan in 2010 for NETS than for InfoGroup. 
-For Suffolk county in 2010 NETS has more than 46,000 businesses than InfoGroup
-For Nassau county in 2010 NETS has more than 43,000 businesses than InfoGroup (In Nassau NETS 2000 had 75,000 businesses, NETS 2010 had 112,000). 
+* There’s ~18,000 more businesses in Manhattan in 2010 for NETS than for InfoGroup.
+* For Suffolk county in 2010 NETS has more than 46,000 businesses than InfoGroup.
+* For Nassau county in 2010 NETS has more than 43,000 businesses than InfoGroup (In Nassau NETS 2000 had 75,000 businesses, NETS 2010 had 112,000). 
 
 
 ##Infogroup Documentation
