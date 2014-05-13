@@ -21,7 +21,7 @@ I included 2012 mostly b/c I had already done it as a test set, but what’s int
 
 ##Infogroup Documentation
 
-All of the documentataion may be found [here:](https://github.com/nygeog/infogroup/tree/master/documentation) 
+All of the documentation included with the purchase may be found [here:](https://github.com/nygeog/infogroup/tree/master/documentation) 
 
 
 ####Anecdotal Info
