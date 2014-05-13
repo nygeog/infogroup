@@ -29,3 +29,5 @@ When we bought it, they told us we would could take it as is without any further
 
 Here's the site but I can't find the info anymore, thankfully you are holding most of what they had. There were a couple summary tables included I didn't see a need to save.
 http://referenceusa-resourcecenter.com/'
+
+'The methodology they use is calling each business annually to see if they're still in business. The geocoding was done using the same data as the ESRI NA streets (I forget the company name) by staff trained in GIS (as told to me when I asked).'
